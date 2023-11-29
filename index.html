@@ -1,0 +1,43 @@
+<!-- Use html:5 to create this -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title: Rohit's Namaste React</title>
+    <!-- Linking stylesheet -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- Using Basic HTML -->
+
+    <!-- <div id="root">
+      <h1>Hello World</h1>
+    </div> -->
+
+    <!-- Using JS -->
+
+    <!-- <script>
+      const heading = document.createElement("h1");
+      heading.innerHTML = "Hello World using JS";
+      // Access root
+      const root = document.getElementById("root");
+      root.appendChild(heading);
+    </script> -->
+
+    <div id="root">
+      <h1>Hello World from Rohit's Namaste React</h1>
+    </div>
+    <!-- Since browser does not understand React, we import React from CDN into our project-->
+    <!-- Importing React -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="./App.js"></script>
+  </body>
+</html>
