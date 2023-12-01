@@ -1,3 +1,5 @@
+import React from "react";
+import { ReactDOM } from "react-dom/client";
 // Creating div without using JSX
 
 const parent = React.createElement("h1", { id: "main-parent" }, [
