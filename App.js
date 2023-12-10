@@ -1,30 +1,32 @@
 import React from "react";
 import { ReactDOM } from "react-dom/client";
-// Creating div without using JSX
 
-// const parent = React.createElement("h1", { id: "main-parent" }, [
-//   React.createElement("div", { id: "child-div" }, "This is child div"),
-//   React.createElement(
-//     "h2",
-//     { id: "child-div-sibling" },
-//     "This is sibling child div"
-//   ),
-// ]);
+// React Element
+const heading = <h1 className="head">Namaste React using JSX</h1>;
 
-const heading = React.createElement("h1", { id: "heading" }, "Namaste React");
-const jsxHeading = <h1>Namaste React</h1>;
+// React Component
+const HeadingComponent = () => (
+  <div id="container">
+    <Title />
+    <h1 className="heading"> Namaste React Functional Component</h1>
+  </div>
+);
+const HeadingComponent2 = () => {
+  return (
+    <div id="container">
+      <h1 className="heading"> Namaste React Functional Component</h1>
+    </div>
+  );
+};
 
-console.log(heading);
-console.log(jsxHeading);
+const HeadingComponent3 = () => (
+  <h1 className="heading"> Namaste React Functional Component</h1>
+);
 
-root.render(heading);
+const Title = () => <h1 className="title">Namaste React Title</h1>;
 
-// Both console output are same
+// //We render react element like this
+// root.render(heading);
 
-// JSX is not HTML inside JS
-// JSX is HTML Like syntax
-// jsxHeading is a React element
-
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-
-// root.render(parent);
+//We render react component like this
+root.render(<HeadingComponent />);
